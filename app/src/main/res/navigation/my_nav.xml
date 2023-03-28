@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.mkrdeveloper.firebaserealtimeexample.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_addFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/addFragment"
         android:name="com.mkrdeveloper.firebaserealtimeexample.AddFragment"
-        android:label="fragment_add"
+        android:label="Add"
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_addFragment_to_homeFragment"
