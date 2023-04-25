@@ -78,8 +78,8 @@ class AddFragment : Fragment() {
                                 .addOnCompleteListener{
                                     Toast.makeText(context, " data stored successfully",Toast.LENGTH_SHORT).show()
                                 }
-                                .addOnFailureListener{
-                                    Toast.makeText(context, "error ${it.message}",Toast.LENGTH_SHORT).show()
+                                .addOnFailureListener{error ->
+                                    Toast.makeText(context, "error ${error.message}",Toast.LENGTH_SHORT).show()
                                 }
 
 

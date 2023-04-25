@@ -10,6 +10,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.mkrdeveloper.firebaserealtimeexample.HomeFragmentDirections
 import com.mkrdeveloper.firebaserealtimeexample.databinding.RvContactsItemBinding
 import com.mkrdeveloper.firebaserealtimeexample.models.Contacts
+import com.squareup.picasso.Picasso
 
 class RvContactsAdapter(private  val contactList : java.util.ArrayList<Contacts>) : RecyclerView.Adapter<RvContactsAdapter.ViewHolder>() {
 
@@ -33,6 +34,7 @@ class RvContactsAdapter(private  val contactList : java.util.ArrayList<Contacts>
                 tvNameItem.text = currentItem.name
                 tvPhoneItem.text = currentItem.phoneNumber
                 tvIdItem.text = currentItem.id
+                Picasso.get().load(currentItem.imgUri).into(imgItem)
 
 
                 rvContainer.setOnClickListener {
