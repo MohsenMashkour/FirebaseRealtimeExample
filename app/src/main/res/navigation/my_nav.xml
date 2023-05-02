@@ -43,5 +43,9 @@
         <argument
             android:name="phone"
             app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
 </navigation>
